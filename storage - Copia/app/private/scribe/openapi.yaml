@@ -1,0 +1,146 @@
+openapi: 3.0.3
+info:
+  title: 'Laravel API Documentation'
+  description: ''
+  version: 1.0.0
+servers:
+  -
+    url: 'http://localhost'
+tags:
+  -
+    name: Endpoints
+    description: ''
+paths:
+  /api/login:
+    post:
+      summary: ''
+      operationId: postApiLogin
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+  /api/armazenagens:
+    get:
+      summary: ''
+      operationId: getApiArmazenagens
+      description: ''
+      parameters: []
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Endpoints
+      security: []
+    post:
+      summary: ''
+      operationId: postApiArmazenagens
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                sku:
+                  type: string
+                  description: 'Must not be greater than 100 characters.'
+                  example: vmqeopfuudtdsufvyvddq
+                  nullable: false
+                quantidade:
+                  type: integer
+                  description: ''
+                  example: 17
+                  nullable: false
+                endereco:
+                  type: string
+                  description: 'Must not be greater than 50 characters.'
+                  example: mqeopfuudtdsufvyvddqa
+                  nullable: false
+                observacoes:
+                  type: string
+                  description: ''
+                  example: consequatur
+                  nullable: true
+                usuario_id:
+                  type: integer
+                  description: ''
+                  example: 17
+                  nullable: false
+                unidade_id:
+                  type: integer
+                  description: ''
+                  example: 17
+                  nullable: false
+              required:
+                - sku
+                - quantidade
+                - endereco
+                - usuario_id
+                - unidade_id
+      security: []
+  '/api/armazenagens/{id}':
+    get:
+      summary: ''
+      operationId: getApiArmazenagensId
+      description: ''
+      parameters: []
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Endpoints
+      security: []
+    put:
+      summary: ''
+      operationId: putApiArmazenagensId
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    delete:
+      summary: ''
+      operationId: deleteApiArmazenagensId
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the armazenagen.'
+        example: consequatur
+        required: true
+        schema:
+          type: string
