@@ -1,3 +1,0 @@
-0000000000000000000000000000000000000000 994c3c2c7f11da0d2dd30b0d59c9365e05c53a29 Manoel Filho <manoel.filho.mf@icloud.com> 1746570420 -0300	commit (initial): Versão inicial da API WMS com autenticação Sanctum
-994c3c2c7f11da0d2dd30b0d59c9365e05c53a29 6c227e6be8d096d13de442996ecc0743ed05dabd Manoel Filho <manoel.filho.mf@icloud.com> 1746570522 -0300	commit: Versão inicial da API WMS com autenticação Sanctum
-6c227e6be8d096d13de442996ecc0743ed05dabd f8ce90e7f94ce9b55418c7887b40daf3d23c06e0 Manoel Filho <manoel.filho.mf@icloud.com> 1746571608 -0300	commit: Adiciona projeto Laravel API WMS
